@@ -27,7 +27,7 @@ const actions = {
     return new Promise((resolve) => {
       context.commit('SET_TOKEN', e.token)
       setToken(e.token)
-      setUserInfo(e)
+      setUserInfo(e.data)
       context.commit('SET_NAME', e.data.name) 
       context.commit('SET_ACCOUNT', e.data.account) 
       resolve()

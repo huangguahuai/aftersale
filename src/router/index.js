@@ -7,6 +7,10 @@ const constantRoutes = [
         path: '/login',
         component: () => import('@/views/login/index'), 
     },
+    {
+      path: '/',
+      component: () => import('@/views/main/index'), 
+  },
 ]
 
 const createRouter = () => new Router({
